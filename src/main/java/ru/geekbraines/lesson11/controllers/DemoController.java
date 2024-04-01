@@ -42,6 +42,9 @@ public class DemoController {
         // информация о пользователе (имя, пароль, роль/метод)
         User user = userService.findByUsername(principal.getName()).orElseThrow(() ->new RuntimeException("Not found")); 
         return "Authenticated user info: " + user.getUsername() + ": " +user.getEmail();
+        // а это наоборот метод преобразования и вывода от Спрингового Юзера к нашему (выводим например емейл, что не 
+        // является характеристикой спрингового юзера, 
+        // principal - это спринговый юзер)
     }
 
 
