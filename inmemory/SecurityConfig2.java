@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 public class SecurityConfig2 extends WebSecurityConfigurerAdapter{
 
     // это inMemory доступ. Просто, дополнение : как конфигурируется, если польз-ли живут в памяти 
-   //  альтернатива DAO 
+   
 
     @Bean
     public UserDetailsService users(){
